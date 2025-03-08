@@ -2,7 +2,7 @@ import time
 import random
 
 import scapy.all as scapy
-scapy.conf.iface = "Intel(R) Wi-Fi 6E AX211 160MHz"
+scapy.conf.iface = "wlan0"
 
 
 def poison(target, router, targetMAC):
