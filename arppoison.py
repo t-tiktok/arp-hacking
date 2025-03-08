@@ -2,11 +2,7 @@ import time
 import random
 
 import scapy.all as scapy
-scapy.show_interfaces()
-
-iface = input("Введите интерфейс или пропуск если нет: ")
-if iface != "":
-  scapy.conf.iface = iface
+scapy.conf.iface = "wlan0"
 
 
 def poison(target, router, targetMAC):
